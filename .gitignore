@@ -1,0 +1,6 @@
+_build/
+.deps
+*.md.bak
+*.pyc
+.vscode/
+.DS_Store
