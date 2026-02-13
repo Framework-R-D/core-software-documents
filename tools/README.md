@@ -31,16 +31,15 @@ tools/
 
 From the **main repository root directory**, run:
 
-	```bash
-	source tools/setup_sphinxdocs-env.sh
-	```
-	
+```bash
+source tools/setup_sphinxdocs-env.sh
+```
 
 or **tools** directory, run:
 
-	```bash
-	source setup_sphinxdocs-env.sh
-	```
+```bash
+source setup_sphinxdocs-env.sh
+```
 
 The setup script performs the following steps automatically:
  
