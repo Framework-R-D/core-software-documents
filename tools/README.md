@@ -10,10 +10,13 @@ It installs Sphinx and all required Python packages needed to build:
 ---
 ## Directory Structure
 
-**tools/**
+
+```
+tools/
 ├── environment.yml
 ├── README.md
 └── setup_sphinxdocs-env.sh
+```
 
 - `environment.yml`  
     Defines the Conda environment and required packages.
@@ -28,11 +31,16 @@ It installs Sphinx and all required Python packages needed to build:
 
 From the **main repository root directory**, run:
 
-    `source tools/setup_sphinxdocs-env.sh`
+	```bash
+	source tools/setup_sphinxdocs-env.sh
+	```
+	
 
 or **tools** directory, run:
 
-    `source setup_sphinxdocs-env.sh``
+	```bash
+	source setup_sphinxdocs-env.sh
+	```
 
 The setup script performs the following steps automatically:
  
