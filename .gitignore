@@ -4,3 +4,4 @@ _build/
 *.pyc
 .vscode/
 .DS_Store
+.obsidian/
