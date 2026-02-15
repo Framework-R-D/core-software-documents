@@ -1,10 +1,5 @@
 FORM Prototype Design Overview
 ==============================
-..
-   Comment (Preface for report and/or book)
-   FORM (Flexible-grained Object-oriented Reading/Writing Model)  is a configuration-driven persistence infrastructure developed for Phlex. It provides a structured approach to data storage and retrieval for scientific computing workflows, with support for flexible data granularity.
-   
-   FORM serves as a mediation layer between the phlex physics framework and underlying storage systems, translating high-level data product definitions intro concrete persistence operations through declarative configuration. 
 
 .. toctree::
    :maxdepth: 2
@@ -21,13 +16,38 @@ FORM Prototype Design Overview
    composition
    sequence-diagrams
    technology-choices
-   glossary
 
+.. Appendix
+   \theHsection: unique internal ID prefix for "appendix" to avoid link conflicts
+   \addtocontents{toc} ... : increase label in toc with default (1.5/2.3em to 5.5em) to avoid overlap since title is changed to Appendix A/B ...
+   \renewcommand{\thesubsection}{\Alph{subsection}.\arabic{subsection}}
 
-..
-   TODO (Also refer to index.rst from Phlex): 
-   Future extensions (enable when needed):
+.. raw:: latex
 
-   - PDF-only preface
-   - PDF availability notice
-   - Appendices and LaTeX appendix handling
+   \clearpage
+   \setcounter{section}{0}
+   \renewcommand{\thesection}{Appendix \Alph{section}}
+
+   \makeatletter
+   \addtocontents{toc}{\protect\patchcmd{\protect\l@section}{1.5em}{5.5em}{}{}}
+   \addtocontents{toc}{\protect\patchcmd{\protect\l@section}{2.3em}{5.5em}{}{}}
+   \renewcommand{\theHsection}{appendix.\thesection}
+   \makeatother
+
+.. toctree::
+   :maxdepth: 1
+
+   appendix/definitions
+   appendix/quick-test
+
+.. References: use \phantomsection to create dumpy anchor to fix TOC jump offset
+
+.. raw:: latex
+
+   \clearpage
+   \phantomsection
+
+.. toctree::
+   :maxdepth: 1
+
+   references

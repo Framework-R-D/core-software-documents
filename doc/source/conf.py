@@ -19,12 +19,16 @@ release = "0.1"
 
 extensions = [
     # Allow referencing sections across document
+    'sphinxcontrib.bibtex',
     'sphinx.ext.autosectionlabel',
     'sphinx_needs',
     'sphinxcontrib.plantuml',
     #'sphinxcontrib.cairosvgconverter',
     'sphinxcontrib.rsvgconverter',
 ]
+
+bibtex_bibfiles = ['refs.bib']
+bibtex_default_style = 'plain'
 
 #sphinx_latex_svg_conversion = True
 svg2pdfconverter_converter = 'inkscape'
@@ -69,4 +73,7 @@ latex_documents = [
 latex_elements = {
     'papersize': 'letterpaper',
     'pointsize': '11pt',
+    'preamble': r'''
+    \usepackage{etoolbox}
+    ''',
 }
