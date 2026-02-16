@@ -1,5 +1,8 @@
+Implementation Considerations
+=============================
+
 Technology Choices
-==================
+------------------
 
 This section briefly explains why FORM has been implemented the way it exists today. FORM’s design requirements are largely driven by the user requirements that informed the design of phlex. Phlex was designed to adapt DUNE physics processing to the architecture of the global HEP computing grid. A typical HEP grid node has a multi-core CPU equipped with 2GB of RAM per core. Large-scale I/O either copies or streams data from a remote network-attached file store. DUNE’s previous processing strategy demonstrated that the raw data from a single far detector readout can fill several GB of RAM. So Phlex was designed to operate in a memory-constrained environment.
 
@@ -23,4 +26,5 @@ FORM is designed to be the ideal I/O component for meeting phlex’s goals for D
 
 
 -  **LCIO**: LCIO is an I/O library aimed at a unified I/O protocol for simulation and reconstruction studies for the International Linear Collider. The key difference between FORM and LCIO is that LCIO stores data products in a fixed hierarchy. FORM is designed to represent phlex’s runtime-defined data product hierarchies including combining related families of data products of the same type into a single I/O query. These flexible data product hierarchies are critical to phlex’s strategy for making the most of the computing grid’s 2GB of RAM per node.
+
 

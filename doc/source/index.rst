@@ -5,17 +5,10 @@ FORM Prototype Design Overview
    :maxdepth: 2
 
    introduction
-   framework-philosophy
-   quick-start
-   key-design-decisions
-   architecture-overview
-   data-flow
-   interface-design
-   configuration-classes
-   storage-class
-   composition
-   sequence-diagrams
-   technology-choices
+   system-overview
+   architecture
+   detailed-design
+   implementation-considerations
 
 .. Appendix
    \theHsection: unique internal ID prefix for "appendix" to avoid link conflicts
@@ -38,7 +31,7 @@ FORM Prototype Design Overview
    :maxdepth: 1
 
    appendix/definitions
-   appendix/quick-test
+   appendix/quick-start
 
 .. References: use \phantomsection to create dumpy anchor to fix TOC jump offset
 

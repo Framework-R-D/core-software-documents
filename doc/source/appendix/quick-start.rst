@@ -1,3 +1,5 @@
+.. _appendix-b-quick-start:
+
 Quick Start
 ===========
 
