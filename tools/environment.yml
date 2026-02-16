@@ -39,15 +39,19 @@ dependencies:
       - imagesize==1.4.1
       - jinja2==3.1.6
       - jsonschema-rs==0.37.4
+      - latexcodec==3.0.1
       - markupsafe==3.0.3
       - pandoc==2.4
       - pillow==12.1.1
       - plantuml==0.3.0
       - plumbum==1.10.0
       - ply==3.11
+      - pybtex==0.25.1
+      - pybtex-docutils==1.0.3
       - pycparser==3.0
       - pygments==2.19.2
       - pyparsing==3.3.2
+      - pyyaml==6.0.3
       - requests==2.32.5
       - requests-file==2.1.0
       - roman-numerals==4.1.0
@@ -57,6 +61,7 @@ dependencies:
       - sphinx-data-viewer==0.1.5
       - sphinx-needs==6.3.0
       - sphinxcontrib-applehelp==2.0.0
+      - sphinxcontrib-bibtex==2.6.5
       - sphinxcontrib-devhelp==2.0.0
       - sphinxcontrib-htmlhelp==2.1.0
       - sphinxcontrib-jquery==4.1
