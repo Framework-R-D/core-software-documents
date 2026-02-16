@@ -33,14 +33,22 @@ FORM Prototype Design Overview
    appendix/definitions
    appendix/quick-start
 
-.. References: use \phantomsection to create dumpy anchor to fix TOC jump offset
+.. References:
+   for PDF, use \phantomsection to create dumpy anchor to fix TOC jump offset
+   for html, need References title
+   bibliography: do not use :list: enumerated or :title: ... could not find bibtex key [bibtex.key_not_found]
 
-.. raw:: latex
+.. only:: html
 
-   \clearpage
-   \phantomsection
+   References
+   ==========
 
-.. toctree::
-   :maxdepth: 1
+.. only:: latex
+   
+   .. raw:: latex
 
-   references
+      \clearpage
+      \phantomsection
+
+.. bibliography::
+   :style: unsrt
