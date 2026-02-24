@@ -1,4 +1,4 @@
-Architechture
+Architecture
 =============
 
 Data Flow
