@@ -7,24 +7,24 @@ Architecture Overview
 
 FORM employs a layered design with distinct responsibilities:
 
-.. image:: /_static/images/form-architecture.svg
+.. image:: /_static/images/form-architecture.*
     :alt: Diagram decription
     :align: center
-    :width: 60%
+    :width: 50%
 
 **mock_phlex Package** (Phlex Framework Domain):
 
--  Defines data product structure (product_base) containing metadata and payload pointers
+-  Defines data product structure (:green:`product_base`) containing metadata and payload pointers
 
--  Provides type registry (product_type_names) for runtime type resolution
+-  Provides type registry (:green:`product_type_names`) for runtime type resolution
 
--  Specifies persistence rules through configuration objects (parse_config, PersistenceItem)
+-  Specifies persistence rules through configuration objects (:green:`parse_config`, :green:`PersistenceItem`)
 
 -  Will be replaced by Phlex
 
 **form Package** (Interface and Translation):
 
--  Presents primary API (form_interface) to phlex framework code for read/write operations
+-  Presents primary API (:green:`form_interface`) to phlex framework code for read/write operations
 
 -  Translates phlex configuration into FORM-internal representations 
 
@@ -44,7 +44,7 @@ FORM employs a layered design with distinct responsibilities:
 
 **core Package** (Addressing Primitives):
 
--  Provides immutable addressing descriptors (Placement, Token)
+-  Provides immutable addressing descriptors (:green:`Placement`, :green:`Token`)
 
 -  Encapsulates file names, container paths, and technology identifiers
 

@@ -41,7 +41,7 @@ Placement
   FORM’s internal description of where to write a data product.  A Placement specifies a technology, a file name, and a container name to which a data product will be written.
 
 POOL/Athena
-  POOL is an I/O library that was designed to be shared among the LHC experiments. Athena is the ATLAS experiment’s fork of POOL that has continued to serve the experiment’s needs up to the era of the HL-LHC. The adaptability of the POOL and Athena libraries’ architectures to RNTuple inspired much of the design of FORM.
+  POOL is an I/O library that was designed to be shared among the LHC experiments. Athena is the ATLAS experiment’s fork of POOL :cite:`Dullmann:2005zza, atlas_athena_io` that has continued to serve the experiment’s needs up to the era of the HL-LHC. The adaptability of the POOL and Athena libraries’ architectures to RNTuple inspired much of the design of FORM.
 
 Token
   FORM’s internal description of where to read a data product from.  A Token specifies a technology, a file name, a container name, and an entry number from which to read a data product.

@@ -2,6 +2,7 @@ _build/
 .deps
 *.md.bak
 *.pyc
+*.swp
 .vscode/
 .DS_Store
 .obsidian/

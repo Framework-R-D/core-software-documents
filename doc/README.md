@@ -25,6 +25,7 @@ source/
 ├── index.rst
 ├── docutils.conf
 ├── *.rst
+├── _diagrams/
 └── _static/
 ```
 ### Key Files
@@ -44,8 +45,12 @@ source/
   Configuration file for Docutils (used internally by Sphinx).  
   It can define default build options, LaTeX settings, encoding, and other processing parameters.
 
+- `_diagrams/`  
+  Optional directory for original diagram source files (`.drawio` and `*inkscape.svg`).
+  Most diagrams use `.drawio` as the source format. However, `read-operation-inkscape.svg` and `read-operation-inkscape.svg` were created in Inkscape, so `*inkscape.svg` files are original editable sources rather than the corresponding `.drawio` files.
+
 - `_static/`  
-  Optional directory for custom static files (CSS, images, JavaScript).
+  Directory for custom static files (CSS, images, JavaScript).
 
 ---
 
