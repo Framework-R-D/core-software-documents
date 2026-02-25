@@ -1,8 +1,8 @@
 # core-software-documents
 
-This repository contains the design documentation of FORM and supporting tools for the project.
+This repository contains the design documentation of FORM, documentation for performance and hardware acceleration, and supporting tools for the project.
 
-The documentation is written using Sphinx and organized to support a structured
+The FORM design documentation is written using Sphinx and organized to support a structured
 software architecture report, including system overview, architectural design,
 and implementation considerations.
 
@@ -13,19 +13,15 @@ and implementation considerations.
 ```
 .
 ├── README.md  # Project overview (this file)
-├── doc/       # Sphinx documentation source and build configuration
+├── doc/       # Main documention directory
 └── tools/     # Example environment setup and helper scripts for sphinx 
 ```
 
 ### `doc/`
-Contains the Sphinx documentation project.
-
-- `source/` – reStructuredText sources
-- `Makefile` – build commands for documentation
-- See `doc/README.md` for detailed instructions.
+Contains the accelerator documentation and the Sphinx documentation project for FORM Design.
 
 ### `tools/`
-Contains environment configuration and setup scripts.
+Contains environment configuration and setup scripts for Sphinx documentation.
 
 - `environment.yml` – Conda environment specification
 - `setup_sphinxdocs-env.sh` – environment setup script
